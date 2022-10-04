@@ -1,3 +1,6 @@
+@forward './sizes';
+@forward './fonts';
+
 :root {
 	--global-dark: #0b0d17;
 	--global-grey: #d0d6f9;
@@ -14,5 +17,5 @@
 
 body {
 	color: var(--global-white);
-	background: var(--global-dark) no-repeat;
+	background: var(--global-dark) no-repeat !important;
 }

@@ -1,0 +1,48 @@
+.global-head-1,
+.global-head-2,
+.global-head-3,
+.global-head-4,
+.global-sub-head-1 {
+	font-family: 'Bellefair', serif;
+}
+
+.global-head-5,
+.global-sub-head-2,
+.global-nav-text {
+	font-family: 'Barlow Condensed', serif;
+}
+
+.global-head-1 {
+	font-size: 9.375rem;
+}
+
+.global-head-2 {
+	font-size: 6.25rem;
+}
+
+.global-head-3 {
+	font-size: 3.5rem;
+}
+
+.global-head-4 {
+	font-size: 2rem;
+}
+
+.global-head-5 {
+	font-size: 1.75rem;
+	letter-spacing: 4.75px;
+}
+
+.global-sub-head-1 {
+	font-size: 1.75rem;
+}
+
+.global-sub-head-2 {
+	font-size: 0.875rem;
+	letter-spacing: 2.35px;
+}
+
+.global-nav-text {
+	font-size: 1rem;
+	letter-spacing: 2.7px;
+}
