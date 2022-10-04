@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentors Solutions](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/svelte-kit-responsive-space-website-n-5h2znErf)
-- Live Site URL: [Live Site](https://creative-cat-3c47d4.netlify.app/)
+- Live Site URL: [Live Site](https://nando-space-tour.netlify.app/)
 
 ## My process
 
