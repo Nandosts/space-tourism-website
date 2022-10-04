@@ -1,0 +1,18 @@
+:root {
+	--global-dark: #0b0d17;
+	--global-grey: #d0d6f9;
+	--global-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--global-white);
+	background: var(--global-dark) no-repeat;
+}
