@@ -15,7 +15,7 @@
 			<a href="." class="nav-item">
 				<span class="bold">00</span> HOME
 			</a>
-			<a href="." class="nav-item">
+			<a href="Destination" class="nav-item">
 				<span class="bold">01</span> DESTINATION
 			</a>
 			<a href="." class="nav-item">
@@ -52,7 +52,7 @@
 			<a href="." class="side-item">
 				<span class="bold">00</span> HOME
 			</a>
-			<a href="." class="side-item">
+			<a href="/Destination" class="side-item">
 				<span class="bold">01</span> DESTINATION
 			</a>
 			<a href="." class="side-item">
