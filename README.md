@@ -1,38 +1,74 @@
-# create-svelte
+# Frontend Mentor - Space tourism website solution
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Creating a project
+## Table of contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Frontend Mentor - Space tourism website solution](#frontend-mentor---space-tourism-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Developing](#developing)
+    - [What I learned](#what-i-learned)
+  - [Author](#author)
+  - [Acknowledgments](#acknowledgments)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Overview
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+![Site Image](https://imgur.com/LAKNDBx.png)
+
+### Links
+
+- Solution URL: [Frontend Mentors Solutions](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/svelte-kit-responsive-space-website-n-5h2znErf)
+- Live Site URL: [Live Site](https://creative-cat-3c47d4.netlify.app/)
+
+## My process
+
+### Built with
+
+- Yarn
+- Semantic HTML5 markup
+- SCSS
+- CSS Grid
+- Typescript
+- [Svelte Kit](https://kit.svelte.dev/) - JS library
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `yarn install`, start a development server:
 
 ```bash
-npm run dev
+yarn run dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+yarn run dev -- --open
 ```
 
-## Building
+### What I learned
 
-To create a production version of your app:
+The most important thing on my vision was svelte-kit, it's a huge and useful tool, with multiple packages to improve the build and change the coding experience. Really interesting and worth. But I enjoyed a lot applying some little animations and stylization's, besides creating a beautiful site.
 
-```bash
-npm run build
-```
+## Author
 
-You can preview the production build with `npm run preview`.
+- Website - [Fernando melo](https://www.your-site.com)
+- Frontend Mentor - [@Nandosts](https://www.frontendmentor.io/profile/Nandosts)
+- LinkedIn - [Fernando Melo](https://www.linkedin.com/in/fernando-sm/)
+- Github - [Nandosts](https://github.com/Nandosts/)
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Acknowledgments
+
+I started learning Svelte on a company named VLGI, and this gave me this first step to start studies and challenges like this one. It's also what inspired me to try svelte-kit at this project.
