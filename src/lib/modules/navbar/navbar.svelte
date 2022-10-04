@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Logo from '../../../assets/shared/logo.svg';
+	import { page } from '$app/stores';
 
 	let sidebarDisplayed = false;
 	function toggleSidebar() {
@@ -12,16 +13,16 @@
 		<img class="nav-logo" src={Logo} alt="Logo" />
 		<span class="pseudo" />
 		<div class="nav-items global-nav-text">
-			<a href="." class="nav-item">
+			<a href="/" class="nav-item" class:active={$page.url.pathname === '/'}>
 				<span class="bold">00</span> HOME
 			</a>
-			<a href="Destination" class="nav-item">
+			<a href="/Destination" class="nav-item" class:active={$page.url.pathname === '/Destination'}>
 				<span class="bold">01</span> DESTINATION
 			</a>
-			<a href="/Crew" class="nav-item">
+			<a href="/Crew" class="nav-item" class:active={$page.url.pathname === '/Crew'}>
 				<span class="bold">02 </span> CREW
 			</a>
-			<a href="/Technology" class="nav-item">
+			<a href="/Technology" class="nav-item" class:active={$page.url.pathname === '/Technology'}>
 				<span class="bold">03</span> TECHNOLOGY
 			</a>
 		</div>
@@ -49,7 +50,7 @@
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<div class="side-items global-nav-text">
-			<a href="." class="side-item">
+			<a href="/" class="side-item">
 				<span class="bold">00</span> HOME
 			</a>
 			<a href="/Destination" class="side-item">
@@ -155,6 +156,16 @@
 					&:hover:before {
 						visibility: visible;
 						transform: scaleX(1);
+					}
+
+					&.active {
+						color: white;
+
+						&:before {
+							visibility: visible;
+							transform: scaleX(1);
+							background-color: var(--global-white);
+						}
 					}
 
 					.bold {
