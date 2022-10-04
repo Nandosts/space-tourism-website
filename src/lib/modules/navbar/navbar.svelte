@@ -18,7 +18,7 @@
 			<a href="Destination" class="nav-item">
 				<span class="bold">01</span> DESTINATION
 			</a>
-			<a href="." class="nav-item">
+			<a href="/Crew" class="nav-item">
 				<span class="bold">02 </span> CREW
 			</a>
 			<a href="." class="nav-item">
@@ -55,7 +55,7 @@
 			<a href="/Destination" class="side-item">
 				<span class="bold">01</span> DESTINATION
 			</a>
-			<a href="." class="side-item">
+			<a href="/Crew" class="side-item">
 				<span class="bold">02 </span> CREW
 			</a>
 			<a href="." class="side-item">
