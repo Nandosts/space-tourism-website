@@ -21,7 +21,7 @@
 			<a href="/Crew" class="nav-item">
 				<span class="bold">02 </span> CREW
 			</a>
-			<a href="." class="nav-item">
+			<a href="/Technology" class="nav-item">
 				<span class="bold">03</span> TECHNOLOGY
 			</a>
 		</div>
@@ -58,7 +58,7 @@
 			<a href="/Crew" class="side-item">
 				<span class="bold">02 </span> CREW
 			</a>
-			<a href="." class="side-item">
+			<a href="Technology" class="side-item">
 				<span class="bold">03</span> TECHNOLOGY
 			</a>
 		</div>
