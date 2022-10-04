@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Data from '../data.json';
+	import { data } from '../data.svelte';
 
-	const destinations = Data.destinations;
+	const destinations = data.destinations;
 	let SelectedDestination = destinations[0];
 
 	function setSelected(num: number) {
@@ -59,17 +59,17 @@
 
 	.wrapper {
 		@media only screen and (min-width: v.$mobile-devices) {
-			--background-image: url('src/assets/destination/background-destination-mobile.jpg');
+			--background-image: url('../../assets/destination/background-destination-mobile.jpg');
 			--content-grid-columns: 1fr;
 			--content-text-align: center;
 		}
 
 		@media only screen and (min-width: v.$tablet-devices) {
-			--background-image: url('src/assets/destination/background-destination-tablet.jpg');
+			--background-image: url('../../assets/destination/background-destination-tablet.jpg');
 		}
 
 		@media only screen and (min-width: v.$md-desktop-devices) {
-			--background-image: url('src/assets/destination/background-destination-desktop.jpg');
+			--background-image: url('../../assets/destination/background-destination-desktop.jpg');
 			--content-grid-columns: 1fr 1fr;
 			--content-text-align: start;
 		}

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Data from '../data.json';
+	import { data } from '../data.svelte';
 
-	const technology = Data.technology;
+	const technology = data.technology;
 	let SelectedTechnology = technology[0];
 
 	function setSelected(num: number) {
@@ -48,7 +48,7 @@
 
 	.wrapper {
 		@media only screen and (min-width: v.$mobile-devices) {
-			--background-image: url('src/assets/technology/background-technology-mobile.jpg');
+			--background-image: url('../../assets/technology/background-technology-mobile.jpg');
 
 			--content-grid-area: 'title' 'img' 'content-text';
 			--content-grid-columns: 1fr;
@@ -59,11 +59,11 @@
 		}
 
 		@media only screen and (min-width: v.$tablet-devices) {
-			--background-image: url('src/assets/technology/background-technology-tablet.jpg');
+			--background-image: url('../../assets/technology/background-technology-tablet.jpg');
 		}
 
 		@media only screen and (min-width: v.$md-desktop-devices) {
-			--background-image: url('src/assets/technology/background-technology-desktop.jpg');
+			--background-image: url('../../assets/technology/background-technology-desktop.jpg');
 
 			--content-grid-area: 'title img' 'content-text img';
 			--content-grid-columns: auto auto 1fr;
@@ -107,7 +107,7 @@
 			grid-area: img;
 
 			img {
-        width: 100%;
+				width: 100%;
 				max-width: 100vw;
 				max-height: 85vh;
 			}
@@ -119,7 +119,7 @@
 			display: grid;
 			grid-template-columns: var(--text-container-columns);
 			justify-items: center;
-      gap: 2rem;
+			gap: 2rem;
 			grid-area: content-text;
 
 			.select-technology {

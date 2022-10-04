@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Data from '../data.json';
+	import { data } from '../data.svelte';
 
-	const crew = Data.crew;
+	const crew = data.crew;
 	let SelectedCrew = crew[0];
 
 	function setSelected(num: number) {
@@ -46,18 +46,18 @@
 
 	.wrapper {
 		@media only screen and (min-width: v.$mobile-devices) {
-			--background-image: url('src/assets/crew/background-crew-mobile.jpg');
+			--background-image: url('../../assets/crew/background-crew-mobile.jpg');
 			--content-grid-area: 'title' 'img' 'content-text';
 			--content-grid-columns: 1fr;
 			--content-text-align: center;
 		}
 
 		@media only screen and (min-width: v.$tablet-devices) {
-			--background-image: url('src/assets/crew/background-crew-tablet.jpg');
+			--background-image: url('../../assets/crew/background-crew-tablet.jpg');
 		}
 
 		@media only screen and (min-width: v.$md-desktop-devices) {
-			--background-image: url('src/assets/crew/background-crew-desktop.jpg');
+			--background-image: url('../../assets/crew/background-crew-desktop.jpg');
 			--content-grid-area: 'title img' 'content-text img';
 			--content-grid-columns: 1fr 1fr;
 			--content-text-align: start;
