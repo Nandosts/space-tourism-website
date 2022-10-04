@@ -35,7 +35,9 @@
 			<h2 class="global-head-2">
 				{SelectedDestination.name}
 			</h2>
-			{SelectedDestination.description}
+			<p class="destination-description">
+				{SelectedDestination.description}
+			</p>
 
 			<div class="planet-data">
 				<div>
@@ -100,7 +102,7 @@
 			.title-number {
 				opacity: 0.25;
 			}
-      margin-bottom: 2rem;
+			margin-bottom: 2rem;
 		}
 
 		.text-container {
@@ -108,17 +110,14 @@
 
 			.select-destination {
 				display: flex;
-        justify-content: var(--content-text-align);
+				justify-content: var(--content-text-align);
 				gap: 1rem;
 
 				.selection-title {
 					text-transform: uppercase;
 					position: relative;
 					height: 2.3rem;
-
-					&:hover {
-						cursor: pointer;
-					}
+					color: var(--global-grey);
 
 					&:before {
 						content: '';
@@ -138,23 +137,33 @@
 						transition: all 0.3s ease-in-out 0s;
 					}
 
-					&:hover:before {
+					&:hover {
 						cursor: pointer;
-						visibility: visible;
-						transform: scaleX(1);
+						&:before {
+							cursor: pointer;
+							visibility: visible;
+							transform: scaleX(1);
+						}
 					}
+					&.active {
+						color: white;
 
-					&.active:before {
-						visibility: visible;
-						transform: scaleX(1);
-						background-color: var(--global-white);
+						&:before {
+							visibility: visible;
+							transform: scaleX(1);
+							background-color: var(--global-white);
+						}
 					}
 				}
 			}
 
+			.destination-description {
+				color: var(--global-grey);
+			}
+
 			.planet-data {
 				display: flex;
-        justify-content: var(--content-text-align);
+				justify-content: var(--content-text-align);
 
 				margin-top: 2rem;
 				margin-left: 0;
