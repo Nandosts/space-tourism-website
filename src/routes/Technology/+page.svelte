@@ -27,7 +27,7 @@
 		<div class="technology-container">
 			<picture>
 				<source media="(min-width: 1280px)" srcset={SelectedTechnology?.images.portrait} />
-				<img src={SelectedTechnology?.images.landscape} alt="Flowers" style="width:auto;" />
+				<img src={SelectedTechnology?.images.landscape} alt="Flowers" />
 			</picture>
 		</div>
 		<div class="text-container">
@@ -78,7 +78,7 @@
 			--background-image: url('../../assets/technology/background-technology-desktop.jpg');
 
 			--content-grid-area: 'title img' 'content-text img';
-			--content-grid-columns: auto auto 1fr;
+			--content-grid-columns: 1fr 1fr;
 			--text-container-columns: auto 1fr;
 
 			--content-text-align: start;
@@ -115,7 +115,7 @@
 		.technology-container {
 			height: 100%;
 			display: flex;
-			align-items: flex-end;
+			align-items: center;
 			grid-area: img;
 
 			img {

@@ -22,7 +22,14 @@
 	<div class="content">
 		<h5 class="global-head-5 content-title"><b class="title-number">02</b> {$_('crewTitle')}</h5>
 		<div class="crew-container">
-			<img src={SelectedCrew?.images.png} alt={'Imagem de ' + SelectedCrew?.name} />
+			<picture>
+				<source
+					srcset={SelectedCrew?.images.png}
+					type="image/png"
+					alt={'Imagem de ' + SelectedCrew?.name}
+				/>
+				<img src={SelectedCrew?.images.webp} alt={'Imagem de ' + SelectedCrew?.name} />
+			</picture>
 		</div>
 		<div class="text-container">
 			<div class="crew-data">

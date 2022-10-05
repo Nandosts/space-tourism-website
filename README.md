@@ -31,7 +31,6 @@ Users should be able to:
 
 ![Site Image](https://user-images.githubusercontent.com/65089035/194088357-4ec623a0-06ba-435c-81bc-cf9db9ef829b.png)
 
-
 ### Links
 
 - Solution URL: [Frontend Mentors Solutions](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3/hub/svelte-kit-responsive-space-website-n-5h2znErf)

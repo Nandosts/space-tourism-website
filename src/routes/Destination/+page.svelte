@@ -22,12 +22,17 @@
 	<div class="content">
 		<div class="planet-container">
 			<h5 class="global-head-5"><b class="title-number">01</b> {$_('destinationTitle')}</h5>
-			<img
-				src={SelectedDestination ? SelectedDestination.images.png : undefined}
-				width={350}
-				height={350}
-				alt={'Imagem de ' + SelectedDestination?.name}
-			/>
+			<picture>
+				<source
+					srcset={SelectedDestination?.images.png}
+					type="image/png"
+					alt={'Imagem de ' + SelectedDestination?.name}
+				/>
+				<img
+					src={SelectedDestination?.images.webp}
+					alt={'Imagem de ' + SelectedDestination?.name}
+				/>
+			</picture>
 		</div>
 		<div class="text-container">
 			<div class="select-destination">
