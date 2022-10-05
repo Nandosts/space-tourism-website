@@ -4,6 +4,7 @@
 	import { _, locale } from 'svelte-i18n';
 	import { setData } from '$lib/modules/translation/data.svelte';
 	import * as Icon from 'svelte-flag-icons';
+	import { browser } from '$app/environment';
 
 	type TMenu = {
 		text?: string;
@@ -47,6 +48,10 @@
 			$locale = 'en-US';
 			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
 			setData();
+		}
+
+		if (browser) {
+			window.localStorage.setItem('Locale', $locale);
 		}
 	}
 </script>
