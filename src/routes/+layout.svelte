@@ -5,8 +5,8 @@
 	import LoadData from '$lib/modules/translation/data.svelte';
 	import { browser } from '$app/environment';
 
-	let loading = true;
-	$: loading = $isLoading;
+	import { Loading } from "$lib/components"
+
 	const locale = browser ? window.localStorage.getItem('Locale') : undefined;
 	register('en', () => import('$lib/modules/translation/en.json'));
 	register('en-US', () => import('$lib/modules/translation/en.json'));
@@ -20,7 +20,7 @@
 </script>
 
 {#if $isLoading}
-	Loading...
+	<Loading />
 {:else}
 	<LoadData />
 	<Navbar />
