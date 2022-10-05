@@ -1,23 +1,32 @@
 <script lang="ts">
-	import { data } from '../data.svelte';
+	import { data } from '$lib/modules/translation/data.svelte';
+	import type { dataType } from '$lib/modules/translation/data.svelte';
 
-	const destinations = data.destinations;
-	let SelectedDestination = destinations[0];
+	import { _ } from 'svelte-i18n';
+
+	let destinations = ($data as dataType).destinations || [];
+
+	$: destinations = ($data as dataType).destinations || [];
+	let SelectedDestination = destinations ? destinations[0] : undefined;
 
 	function setSelected(num: number) {
-		SelectedDestination = destinations[num];
+		SelectedDestination = destinations ? destinations[num] : undefined;
+	}
+
+	$: if (destinations) {
+		setSelected(0);
 	}
 </script>
 
 <div class="wrapper">
 	<div class="content">
 		<div class="planet-container">
-			<h5 class="global-head-5"><b class="title-number">01</b> Pick your Destination</h5>
+			<h5 class="global-head-5"><b class="title-number">01</b> {$_('destinationTitle')}</h5>
 			<img
-				src={SelectedDestination.images.png}
+				src={SelectedDestination ? SelectedDestination.images.png : undefined}
 				width={350}
 				height={350}
-				alt={'Imagem de ' + SelectedDestination.name}
+				alt={'Imagem de ' + SelectedDestination?.name}
 			/>
 		</div>
 		<div class="text-container">
@@ -33,21 +42,21 @@
 				{/each}
 			</div>
 			<h2 class="global-head-2">
-				{SelectedDestination.name}
+				{SelectedDestination?.name}
 			</h2>
 			<p class="destination-description">
-				{SelectedDestination.description}
+				{SelectedDestination?.description}
 			</p>
 
 			<div class="planet-data">
 				<div>
-					<p class="global-nav-text planet-data-title">AVG. DISTANCE</p>
-					<p class="global-sub-head-1">{SelectedDestination.distance}</p>
+					<p class="global-nav-text planet-data-title">{$_('destinationDistance')}</p>
+					<p class="global-sub-head-1">{SelectedDestination?.distance}</p>
 				</div>
 
 				<div>
-					<p class="global-nav-text planet-data-title">EST. TRAVEL TIME</p>
-					<p class="global-sub-head-1">{SelectedDestination.travel}</p>
+					<p class="global-nav-text planet-data-title">{$_('destinationTravel')}</p>
+					<p class="global-sub-head-1">{SelectedDestination?.travel}</p>
 				</div>
 			</div>
 		</div>

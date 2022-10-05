@@ -1,0 +1,65 @@
+{
+	"navHome": "Início",
+	"navDestination": "Destino",
+	"navCrew": "Equipe técnica",
+	"navTechnology": "Tecnologias",
+
+	"homeTitle1": "Então, você quer viajar para o",
+	"homeTitle2": "Espaço",
+	"homeTitle3": "Vamos encarar; se você quer ir para o espaço, você pode ir genuinamente para o espaço sideral e não pairar meio que à beira dele. Bem, sente-se e relaxe porque nós lhe daremos uma experiência verdadeiramente fora deste mundo!",
+	"homeExploreButton": "EXPLORAR",
+
+	"destinationTitle": "Escolha seu destino",
+	"destinationDistance": "DIST. MÉDIA",
+	"destinationTravel": "TEMPO DE VIAGEM",
+
+	"crewTitle": "Conheça sua equipe",
+
+	"technologyTitle": "LANÇAMENTO ESPACIAL 101",
+	"technologySubtitle": "A TERMINOLOGIA...",
+
+	"moonName": "Lua",
+	"moonDescription": "Veja nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para ajudar a recuperar a perspectiva e voltar revigorado. Enquanto estiver lá, aproveite um pouco da história visitando o pouso da Luna 2 e da Apollo 11 sites.",
+	"moonDistance": "384.400 km",
+	"moonTravel": "3 dias",
+
+	"marsName": "Marte",
+	"marsDescription": "Não se esqueça de levar suas botas de caminhada. Você precisará delas para enfrentar o Monte Olimpo, a montanha planetária mais alta do nosso sistema solar. É duas vezes e meia o tamanho do Everest!",
+	"marsDistance": "225 mil. km",
+	"marsTravel": "9 meses",
+
+	"europaName": "Europa",
+	"europaDescription": "A menor das quatro luas galileanas que orbitam Júpiter, Europa é o sonho de um amante do inverno. Com uma superfície gelada, é perfeito para um pouco de patinação no gelo, curling, hóquei ou simplesmente relaxar em sua confortável cabana de inverno.",
+	"europaDistance": "628 mil. km",
+	"europaTravel": "3 anos",
+
+	"titanName": "Titan",
+	"titanDescription": "A única lua conhecida por ter uma atmosfera densa além da Terra, Titã é um lar longe de casa (apenas algumas centenas de graus mais frio!). Como bônus, você obtém vistas impressionantes dos Anéis de Saturno.",
+	"titanDistance": "1,6 bil. km",
+	"titanTravel": "7 anos",
+
+	"douglasName": "Douglas Hurley",
+	"douglasRole": "Comandante",
+	"douglasBio": "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele foi lançado ao espaço pela terceira vez como comandante da Crew Dragon Demo-2.",
+
+	"markName": "Mark Shuttleworth",
+	"markRole": "Especialista em Missão",
+	"markBio": "Mark Richard Shuttleworth é o fundador e CEO da Canonical, a empresa por trás do sistema operacional Ubuntu baseado em Linux. Shuttleworth se tornou o primeiro sul-africano a viajar para o espaço como turista espacial.",
+
+	"victorName": "Victor Glover",
+	"victorRole": "Piloto",
+	"victorBio": "Piloto no primeiro voo operacional do SpaceX Crew Dragon para a Estação Espacial Internacional. Glover é comandante da Marinha dos EUA, onde pilota um F/A-18. Ele foi membro da tripulação da Expedição 64 e serviu como engenheiro de vôo de sistemas de estação.",
+
+	"anoushehName": "Anousheh Ansari",
+	"anoushehRole": "Engenheiro de Voo",
+	"anoushehBio": "Anousheh Ansari é uma engenheira americana iraniana e co-fundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço.",
+
+	"launchName": "Veículo de lançamento",
+	"launchDescription": "Um veículo de lançamento ou foguete transportador é um veículo movido a foguete usado para transportar uma carga útil da superfície da Terra para o espaço, geralmente para a órbita da Terra ou além. Nosso foguete transportador WEB-X é o mais poderoso em operação. metros de altura, é uma visão inspiradora na plataforma de lançamento!",
+
+	"spaceportName": "Espaçoporto",
+	"spaceportDescription": "Um espaçoporto ou cosmódromo é um local para lançamento (ou recebimento) de naves espaciais, por analogia ao porto marítimo para navios ou aeroporto para aeronaves. Com sede no famoso Cabo Canaveral, nosso espaçoporto está idealmente situado para aproveitar as vantagens da Terra rotação para o lançamento.",
+
+	"spaceCapsuleName": "Cápsula espacial",
+	"spaceCapsuleDescription": "Uma cápsula espacial é uma espaçonave frequentemente tripulada que usa uma cápsula de reentrada de corpo rombudo para reentrar na atmosfera da Terra sem asas. Nossa cápsula é onde você passará seu tempo durante o voo. Inclui um ginásio espacial, cinema e muitas outras atividades para mantê-lo entretido."
+}

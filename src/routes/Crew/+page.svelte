@@ -1,30 +1,39 @@
 <script lang="ts">
-	import { data } from '../data.svelte';
+	import { data } from '$lib/modules/translation/data.svelte';
+	import type { dataType } from '$lib/modules/translation/data.svelte';
 
-	const crew = data.crew;
-	let SelectedCrew = crew[0];
+	import { _ } from 'svelte-i18n';
+
+	let crew = ($data as dataType).crew || [];
+	$: crew = ($data as dataType).crew || [];
+
+	let SelectedCrew = crew ? crew[0] : undefined;
 
 	function setSelected(num: number) {
 		SelectedCrew = crew[num];
+	}
+
+	$: if (crew) {
+		setSelected(0);
 	}
 </script>
 
 <div class="wrapper">
 	<div class="content">
-		<h5 class="global-head-5 content-title"><b class="title-number">02</b> Meet your Crew</h5>
+		<h5 class="global-head-5 content-title"><b class="title-number">02</b> {$_('crewTitle')}</h5>
 		<div class="crew-container">
-			<img src={SelectedCrew.images.png} alt={'Imagem de ' + SelectedCrew.name} />
+			<img src={SelectedCrew?.images.png} alt={'Imagem de ' + SelectedCrew?.name} />
 		</div>
 		<div class="text-container">
 			<div class="crew-data">
 				<h2 class="global-head-4 crew-role">
-					{SelectedCrew.role}
+					{SelectedCrew?.role}
 				</h2>
-				<h2 class="global-head-3">
-					{SelectedCrew.name}
+				<h2 class="global-head-3 uppercase">
+					{SelectedCrew?.name}
 				</h2>
 				<p class="crew-description">
-					{SelectedCrew.bio}
+					{SelectedCrew?.bio}
 				</p>
 			</div>
 

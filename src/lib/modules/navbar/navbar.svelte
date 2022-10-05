@@ -1,10 +1,53 @@
 <script lang="ts">
 	import Logo from '../../../assets/shared/logo.svg';
 	import { page } from '$app/stores';
+	import { _, locale } from 'svelte-i18n';
+	import { setData } from '$lib/modules/translation/data.svelte';
+	import * as Icon from 'svelte-flag-icons';
+
+	type TMenu = {
+		text?: string;
+		path?: string;
+	};
 
 	let sidebarDisplayed = false;
 	function toggleSidebar() {
 		sidebarDisplayed = !sidebarDisplayed;
+	}
+
+	let menuItems: TMenu[] = [];
+
+	$: menuItems = [
+		{
+			text: $_('navHome'),
+			path: '/'
+		},
+		{
+			text: $_('navDestination'),
+			path: '/Destination'
+		},
+		{
+			text: $_('navCrew'),
+			path: '/Crew'
+		},
+		{
+			text: $_('navTechnology'),
+			path: '/Technology'
+		}
+	];
+
+	function setLocale() {
+		if ($locale === 'en-US' || $locale === 'en') {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+			$locale = 'pt-BR';
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+			setData();
+		} else {
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+			$locale = 'en-US';
+			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
+			setData();
+		}
 	}
 </script>
 
@@ -13,18 +56,19 @@
 		<img class="nav-logo" src={Logo} alt="Logo" />
 		<span class="pseudo" />
 		<div class="nav-items global-nav-text">
-			<a href="/" class="nav-item" class:active={$page.url.pathname === '/'}>
-				<span class="bold">00</span> HOME
-			</a>
-			<a href="/Destination" class="nav-item" class:active={$page.url.pathname === '/Destination'}>
-				<span class="bold">01</span> DESTINATION
-			</a>
-			<a href="/Crew" class="nav-item" class:active={$page.url.pathname === '/Crew'}>
-				<span class="bold">02 </span> CREW
-			</a>
-			<a href="/Technology" class="nav-item" class:active={$page.url.pathname === '/Technology'}>
-				<span class="bold">03</span> TECHNOLOGY
-			</a>
+			{#each menuItems as navItem, i}
+				<a href={navItem.path} class="nav-item" class:active={$page.url.pathname === navItem.path}>
+					<span class="bold">0{i}</span>
+					{navItem.text}
+				</a>
+			{/each}
+			<button class="flag-button" on:click={setLocale}>
+				{#if $locale === 'en-US' || $locale === 'en'}
+					<Icon.Us size="35" />
+				{:else}
+					<Icon.Br size="35" />
+				{/if}
+			</button>
 		</div>
 		<div class="sidebar-hamburger" on:click={toggleSidebar}>
 			<svg
@@ -50,18 +94,12 @@
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<div class="side-items global-nav-text">
-			<a href="/" class="side-item">
-				<span class="bold">00</span> HOME
-			</a>
-			<a href="/Destination" class="side-item">
-				<span class="bold">01</span> DESTINATION
-			</a>
-			<a href="/Crew" class="side-item">
-				<span class="bold">02 </span> CREW
-			</a>
-			<a href="Technology" class="side-item">
-				<span class="bold">03</span> TECHNOLOGY
-			</a>
+			{#each menuItems as sideItem, i}
+				<a href={sideItem.path} class="side-item">
+					<span class="bold">0{i}</span>
+					{sideItem.text}
+				</a>
+			{/each}
 		</div>
 	</div>
 </div>
@@ -133,6 +171,7 @@
 					align-items: center;
 
 					text-decoration: none;
+					text-transform: uppercase;
 					color: var(--global-white);
 
 					&:before {
@@ -170,6 +209,16 @@
 
 					.bold {
 						font-weight: 700;
+					}
+				}
+
+				.flag-button {
+					font-size: 2rem;
+					background: none;
+					border: none;
+
+					&:hover {
+						cursor: pointer;
 					}
 				}
 			}

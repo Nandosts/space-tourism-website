@@ -30,6 +30,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"sass": "^1.55.0"
+		"sass": "^1.55.0",
+		"svelte-flag-icons": "^0.1.1",
+		"svelte-i18n": "^3.4.0"
 	}
 }

@@ -1,0 +1,65 @@
+{
+	"navHome": "Home",
+	"navDestination": "Destination",
+	"navCrew": "Crew",
+	"navTechnology": "Technology",
+
+	"homeTitle1": "So, you want to travel to",
+	"homeTitle2": "Space",
+	"homeTitle3": "Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!",
+	"homeExploreButton": "EXPLORE",
+
+	"destinationTitle": "Pick your Destination",
+	"destinationDistance": "AVG. DISTANCE",
+	"destinationTravel": "EST. TRAVEL TIME",
+
+	"crewTitle": "Meet your crew",
+
+	"technologyTitle": "SPACE LAUNCH 101",
+	"technologySubtitle": "THE TERMINOLOGY...",
+
+	"moonName": "Moon",
+	"moonDescription": "See our planet like you've never seen it before. A relaxing trip perfect to help you regain perspective and come back refreshed. While you're there, enjoy some history by visiting the Luna 2 landing and Apollo 11 sites.",
+	"moonDistance": "384,400 km",
+	"moonTravel": "3 days",
+
+	"marsName": "Mars",
+	"marsDescription": "Don't forget to bring your hiking boots. You'll need them to tackle Mount Olympus, the highest planetary mountain in our solar system. It's two and a half times the size of Everest!",
+	"marsDistance": "225 thousand km",
+	"marsTravel": "9 months",
+
+	"europaName": "Europe",
+	"europaDescription": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover's dream. With an icy surface, it's perfect for some ice skating, curling, hockey or simply relaxing in your comfortable cabin winter.",
+	"europaDistance": "628 thousand. km",
+	"europaTravel": "3 years",
+
+	"titanName": "Titan",
+	"titanDescription": "The only moon known to have a dense atmosphere beyond Earth, Titan is a home away from home (only a few hundred degrees cooler!). As a bonus, you get stunning views of Saturn's Rings.",
+	"titanDistance": "1.6 bil. km",
+	"titanTravel": "7 years",
+
+	"douglasName": "Douglas Hurley",
+	"douglasRole": "Commander",
+	"douglasBio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He was launched into space for the third time as commander of Crew Dragon Demo-2.",
+
+	"markName": "Mark Shuttleworth",
+	"markRole": "Mission Specialist",
+	"markBio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.",
+
+	"victorName": "Victor Glover",
+	"victorRole": "Pilot",
+	"victorBio": "Pilot on the first operational SpaceX Crew Dragon flight to the International Space Station. Glover is a commander in the US Navy, where he pilots an F/A-18. He was a member of the Expedition 64 crew and served as a flight station systems.",
+
+	"anoushehName": "Anousheh Ansari",
+	"anoushehRole": "Flight Engineer",
+	"anoushehBio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS and the first Iranian woman in space.",
+
+	"launchName": "Launch Vehicle",
+	"launchDescription": "A launch vehicle or carrier rocket is a rocket-powered vehicle used to transport a payload from the Earth's surface into space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most mighty in operation. meters high, it's an awe-inspiring sight on the launch pad!",
+
+	"spaceportName": "Spaceport",
+	"spaceportDescription": "A spaceport or cosmodrome is a place for launching (or receiving) spacecraft, by analogy to a seaport for ships or an airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take advantage of Earth's rotation for launch.",
+
+	"spaceCapsuleName": "Space Capsule",
+	"spaceCapsuleDescription": "A space capsule is a frequently manned spacecraft that uses a blunt-bodied re-entry capsule to re-enter Earth's atmosphere without wings. Our capsule is where you will spend your time during flight. It includes a space gym, cinema and lots of other activities to keep you entertained."
+}

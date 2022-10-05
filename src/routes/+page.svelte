@@ -1,16 +1,15 @@
 <script lang="ts">
+	import { _ } from 'svelte-i18n';
 </script>
 
 <div class="wrapper">
 	<div class="content">
 		<div class="text-container">
-			<h5 class="global-head-5">So, you want to travel to</h5>
-			<div class="global-head-1">Space</div>
-			Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not
-			hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of
-			this world experience!
+			<h5 class="global-head-5">{$_('homeTitle1')}</h5>
+			<div class="global-head-1">{$_('homeTitle2')}</div>
+			{$_('homeTitle3')}
 		</div>
-		<a href="/Destination" class="global-head-4 explore"> EXPLORE </a>
+		<a href="/Destination" class="global-head-4 explore"> {$_('homeExploreButton')} </a>
 	</div>
 </div>
 

@@ -1,21 +1,33 @@
 <script lang="ts">
-	import { data } from '../data.svelte';
+	import { data } from '$lib/modules/translation/data.svelte';
+	import type { dataType } from '$lib/modules/translation/data.svelte';
 
-	const technology = data.technology;
-	let SelectedTechnology = technology[0];
+	import { _ } from 'svelte-i18n';
+
+	let technology = ($data as dataType).technology || [];
+	$: technology = ($data as dataType).technology || [];
+
+	let SelectedTechnology = technology ? technology[0] : undefined;
 
 	function setSelected(num: number) {
 		SelectedTechnology = technology[num];
+	}
+
+	$: if (technology) {
+		setSelected(0);
 	}
 </script>
 
 <div class="wrapper">
 	<div class="content">
-		<h5 class="global-head-5 content-title"><b class="title-number">03</b> SPACE LAUNCH 101</h5>
+		<h5 class="global-head-5 content-title">
+			<b class="title-number">03</b>
+			{$_('technologyTitle')}
+		</h5>
 		<div class="technology-container">
 			<picture>
-				<source media="(min-width: 1280px)" srcset={SelectedTechnology.images.portrait} />
-				<img src={SelectedTechnology.images.landscape} alt="Flowers" style="width:auto;" />
+				<source media="(min-width: 1280px)" srcset={SelectedTechnology?.images.portrait} />
+				<img src={SelectedTechnology?.images.landscape} alt="Flowers" style="width:auto;" />
 			</picture>
 		</div>
 		<div class="text-container">
@@ -31,12 +43,12 @@
 				{/each}
 			</div>
 			<div class="technology-data">
-				<h2 class="global-head-4 technology-role">THE TERMINOLOGY...</h2>
+				<h2 class="global-sub-head-2 technology-role">{$_('technologySubtitle')}</h2>
 				<h2 class="global-head-3">
-					{SelectedTechnology.name}
+					{SelectedTechnology?.name}
 				</h2>
 				<p class="technology-description">
-					{SelectedTechnology.description}
+					{SelectedTechnology?.description}
 				</p>
 			</div>
 		</div>
