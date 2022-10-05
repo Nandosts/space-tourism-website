@@ -38,21 +38,21 @@
 	];
 
 	function setLocale() {
+		let newLocale = '';
 		if ($locale === 'en-US' || $locale === 'en') {
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-			$locale = 'pt-BR';
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-			setData();
+			newLocale = 'pt-BR';
 		} else {
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-			$locale = 'en-US';
-			// eslint-disable-next-line @typescript-eslint/no-unsafe-call
-			setData();
+			newLocale = 'en';
 		}
+		$locale = newLocale;
 
 		if (browser) {
-			window.localStorage.setItem('Locale', $locale);
+			window.localStorage.setItem('Locale', newLocale);
 		}
+	}
+
+	$: if ($locale) {
+		setData();
 	}
 </script>
 

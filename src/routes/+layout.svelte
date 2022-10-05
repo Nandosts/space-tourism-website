@@ -5,7 +5,7 @@
 	import LoadData from '$lib/modules/translation/data.svelte';
 	import { browser } from '$app/environment';
 
-	import { Loading } from "$lib/components"
+	import { Loading } from '$lib/components';
 
 	const locale = browser ? window.localStorage.getItem('Locale') : undefined;
 	register('en', () => import('$lib/modules/translation/en.json'));
