@@ -95,9 +95,18 @@
 	</nav>
 
 	<div class="sidebar" class:hidden={!sidebarDisplayed}>
-		<button class="close-button" aria-label="Close alert" type="button" on:click={toggleSidebar}>
-			<span aria-hidden="true">&times;</span>
-		</button>
+		<div class="buttons">
+			<button class="flag-button" on:click={setLocale}>
+				{#if $locale === 'en-US' || $locale === 'en'}
+					<Icon.Us size="35" />
+				{:else}
+					<Icon.Br size="35" />
+				{/if}
+			</button>
+			<button class="close-button" aria-label="Close alert" type="button" on:click={toggleSidebar}>
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
 		<div class="side-items global-nav-text">
 			{#each menuItems as sideItem, i}
 				<a href={sideItem.path} class="side-item">
@@ -260,19 +269,37 @@
 			background: rgba(255, 255, 255, 0.04);
 			backdrop-filter: blur(2.5rem);
 
-			.close-button {
-				margin: 1rem 2rem 0 auto;
-				height: min-content;
+			.buttons {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				margin-bottom: 1rem;
+				.flag-button {
+					font-size: 2rem;
+					background: none;
+					border: none;
 
-				font-size: 2rem;
-				background: none;
-				border: none;
-				color: var(--global-white);
+					&:hover {
+						cursor: pointer;
+					}
+					margin: 2rem auto 0 2rem;
+				}
 
-				&:hover {
-					cursor: pointer;
+				.close-button {
+					margin: 1rem 2rem 0 auto;
+					height: min-content;
+
+					font-size: 2rem;
+					background: none;
+					border: none;
+					color: var(--global-white);
+
+					&:hover {
+						cursor: pointer;
+					}
 				}
 			}
+
 			.side-items {
 				display: grid;
 				margin-left: 3rem;
